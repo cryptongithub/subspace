@@ -24,8 +24,8 @@ sudo adduser --system --home=/var/lib/subspace subspace
 echo -e '\e[40m\e[92m' && read -p "Enter wallet address: " SUBSPACE_WALLET && echo -e '\e[0m'
 echo -e '\e[40m\e[92m' && read -p "Enter node name: " SUBSPACE_NODENAME && echo -e '\e[0m'
 
-echo "export SUBSPACE_ADDRESS=$SUBSPACE_WALLET" >> $HOME/.bash_profile
-echo "export NICKNAME=$SUBSPACE_NODENAME" >> $HOME/.bash_profile
+echo "export SUBSPACE_WALLET=$SUBSPACE_WALLET" >> $HOME/.bash_profile
+echo "export SUBSPACE_NODENAME=$SUBSPACE_NODENAME" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 
 sudo tee <<EOF >/dev/null /etc/systemd/system/subspace-node.service
