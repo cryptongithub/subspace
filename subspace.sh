@@ -19,8 +19,6 @@ wget -O subspace-farmer https://github.com/subspace/subspace/releases/download/s
 sudo mv subspace* /usr/local/bin/
 sudo chmod +x /usr/local/bin/subspace*
 
-sudo adduser --system --home=/var/lib/subspace subspace
-
 echo -e '\e[40m\e[92m' && read -p "Enter wallet address: " SUBSPACE_WALLET && echo -e '\e[0m'
 echo -e '\e[40m\e[92m' && read -p "Enter node name: " SUBSPACE_NODENAME && echo -e '\e[0m'
 
